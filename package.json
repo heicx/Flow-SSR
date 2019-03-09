@@ -1,0 +1,28 @@
+{
+  "name": "Flow-SSR",
+  "version": "1.0.0",
+  "description": "FLOW福禄，摆脱传统香烟的种种限制，无需点火，拿起就抽，高保真还原了传统卷烟口感和击喉感的同时，极大降低了吸烟对身体的健康。",
+  "author": "heichenxuan",
+  "keywords": ["FLOW,福禄,flow福禄,flow电子烟,福禄电子烟,flow雾化烟,福禄雾化烟,flow福禄电子烟,flow福禄雾化烟"],
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "koa": "^2.6.2",
+    "@nuxtjs/axios": "^5.3.6"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "prettier": "1.14.3",
+    "sass-loader": "^7.1.0"
+  }
+}
