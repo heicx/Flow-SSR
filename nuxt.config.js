@@ -16,7 +16,7 @@ module.exports = {
       { hid: 'keywords', name: 'keywords', content: pkg.keywords[0] }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'shortcut icon', type: 'image/png', href: '/logo.png' }
     ]
   },
 
