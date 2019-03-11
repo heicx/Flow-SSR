@@ -3,7 +3,10 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
-
+  server: {
+    port: 81,
+    host: '0.0.0.0'
+  },
   /*
   ** Headers of the page
   */
