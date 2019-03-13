@@ -30,6 +30,7 @@ export default {
     width: 100%;
     height: 3271px;
     margin: 0 auto;
+    margin-top: -1px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
