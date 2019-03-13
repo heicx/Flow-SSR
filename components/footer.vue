@@ -8,7 +8,7 @@
 				</a>
 			</div>
 			<div class="footer-qrcode" :class="{'footer-qrcode-anim': shareLinkName == 'wechat'}"></div>
-			<div class="footer-title">北京羽衣科技有限公司</div>
+      <router-link class="footer-title" to='/about' tag='a'>北京羽衣科技有限公司</router-link>
 			<ul class="footer-info">
 				<li class="address">地址：北京市朝阳区阜通大街 1 号院 6 号楼</li>
 				<li class="email">
