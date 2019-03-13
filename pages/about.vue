@@ -30,7 +30,7 @@ export default {
     font-weight: bold;
   }
   h5 {
-    width: 1100px;
+    width: 710px;
     margin-top: 30px;
     display: inline-block;
     text-align: left;
