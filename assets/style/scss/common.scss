@@ -181,10 +181,15 @@ body {
 		}
 	}
 	.footer-title {
+    display: inline-block;
 		color: #575757;
 		font-size: 17px;
 		line-height: 1;
-		margin-bottom: 20px;
+    margin-bottom: 20px;
+    transition: all .35s ease-out;
+    &:hover {
+      color: #6f6d6d;
+    }
 	}
 	.footer-info {
 		line-height: 1;
