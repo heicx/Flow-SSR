@@ -28,6 +28,11 @@ export default {
 					name: '在线商城',
 					alias: 'shop',
 					link: '/shop'
+        },
+        {
+					name: '关于我们',
+					alias: 'about',
+					link: '/about'
 				}
 			]
 		}
