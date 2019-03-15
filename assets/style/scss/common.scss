@@ -22,11 +22,11 @@ body {
 	margin: 0 auto;
 	.topbar-logo {
 		float: left;
-		background: url(~assets/images/logo-icon.png) no-repeat 50%;
-		background-size: contain;
-		width: 120px;
+		background: url(~assets/images/logo@2x.png) no-repeat 50%;
+		background-size: cover;
+		width: 195px;
 		height: 30px;
-		margin-top: 20px;
+		margin-top: 21px;
 	}
 	.topbar-tabs {
 		float: right;

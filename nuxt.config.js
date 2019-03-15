@@ -11,7 +11,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'FLOW福禄电子烟 - 前锤子科技高管 朱萧木创业项目 换弹雾化烟',
+    title: 'FLOW 福禄 换弹雾化烟',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
