@@ -208,7 +208,7 @@ export default {
 
 .shop-colors {
     position: relative;
-    width: 1273px;
+    width: 1515px;
     height: 670px;
     margin: 0 auto;
     background-repeat: no-repeat;
