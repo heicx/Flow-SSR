@@ -3,7 +3,7 @@
         <div class="shop-banner-container">
             <div class="shop-banner">
                 <div class="shop-banner-btn">
-                    <a class="btn-1" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21283948660.2.4bb57afaMLmV8H&id=586143386583"></a>
+                    <a class="btn-1" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
                     <a class="btn-2" @click="showQRCode('qrCode1', $event)"></a>
                 </div>
                 <div class="qr-code" :class="{'qr-code-anim': qrcodeName == 'qrCode1'}"></div>
@@ -13,12 +13,13 @@
             <a class="blue-btn" @click="changeColor('blue')"></a>
             <a class="black-btn" @click="changeColor('black')"></a>
             <a class="white-btn" @click="changeColor('white')"></a>
-            <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21283948660.2.4bb57afaMLmV8H&id=586143386583"></a>
+            <a class="pink-btn" @click="changeColor('pink')"></a>
+            <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
             <a class="mini-program-btn" @click="showQRCode('qrCode2', $event)"></a>
             <div class="qr-code" :class="{'qr-code-anim': qrcodeName == 'qrCode2'}"></div>
         </div>
         <div class="shop-colors">
-            <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21283948660.2.4bb57afaMLmV8H&id=586143386583"></a>
+            <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
             <a class="mini-program-btn" @click="showQRCode('qrCode3', $event)"></a>
             <div class="qr-code" :class="{'qr-code-anim': qrcodeName == 'qrCode3'}"></div>
         </div>
@@ -143,6 +144,10 @@ export default {
         background-image: url(~assets/images/shop-box-white.png);
         background-image: -webkit-image-set(url(~assets/images/shop-box-white.png) 1x,url(~assets/images/shop-box-white@2x.png) 2x);
     }
+    &.pink {
+        background-image: url(~assets/images/shop-box-pink.png);
+        background-image: -webkit-image-set(url(~assets/images/shop-box-pink.png) 1x,url(~assets/images/shop-box-pink@2x.png) 2x);
+    }
     .black-btn {
         position: absolute;
         content: "";
@@ -168,6 +173,15 @@ export default {
         height: 38px;
         border-radius: 50%;
         right: 316px;
+        top: 290px;
+    }
+    .pink-btn {
+        position: absolute;
+        content: "";
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        right: 260px;
         top: 290px;
     }
     .taobao-btn {
@@ -208,32 +222,32 @@ export default {
 
 .shop-colors {
     position: relative;
-    width: 1515px;
+    width: 1273px;
     height: 670px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-image: url(~assets/images/shop-category.png);
     background-image: -webkit-image-set(url(~assets/images/shop-category.png) 1x,url(~assets/images/shop-category@2x.png) 2x);
     .taobao-btn {
         position: absolute;
         content: "";
-        width: 122px;
+        width: 110px;
         height: 22px;
-        top: 134px;
+        top: 164px;
         left: 0;
-        right: 162px;
+        right: 140px;
         margin: 0 auto;
     }
     .mini-program-btn {
         position: absolute;
         content: "";
-        width: 156px;
+        width: 134px;
         height: 22px;
-        top: 134px;
+        top: 164px;
         left: 0;
-        right: -186px;
+        right: -160px;
         margin: 0 auto;
     }
     .qr-code {
@@ -244,8 +258,8 @@ export default {
         opacity: 0;
         border-radius: 16px;
         border: 1px solid #e8e5e5;
-        top: 170px;
-        right: 406px;
+        top: 200px;
+        right: 420px;
         z-index: 5;
         background-size: cover;
         background-image: url(~assets/images/mini-program.jpg);
