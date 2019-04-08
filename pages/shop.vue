@@ -5,6 +5,7 @@
                 <div class="shop-banner-btn">
                     <a class="btn-1" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
                     <a class="btn-2" @click="showQRCode('qrCode1', $event)"></a>
+                    <a class="btn-3" target="_blank" href="https://item.jd.com/100002902657.html"></a>
                 </div>
                 <div class="qr-code" :class="{'qr-code-anim': qrcodeName == 'qrCode1'}"></div>
             </div>
@@ -16,11 +17,13 @@
             <a class="pink-btn" @click="changeColor('pink')"></a>
             <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
             <a class="mini-program-btn" @click="showQRCode('qrCode2', $event)"></a>
+            <a class="jd-btn" target="_blank" href="https://item.jd.com/100002902657.html"></a>
             <div class="qr-code" :class="{'qr-code-anim': qrcodeName == 'qrCode2'}"></div>
         </div>
         <div class="shop-colors">
-            <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
+            <a class="taobao-btn" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c- s.w4004-21525864382.4.3d703438MaVxUV&id=590715241618"></a>
             <a class="mini-program-btn" @click="showQRCode('qrCode3', $event)"></a>
+            <a class="jd-btn" target="_blank" href="https://item.jd.com/100004051744.html"></a>
             <div class="qr-code" :class="{'qr-code-anim': qrcodeName == 'qrCode3'}"></div>
         </div>
     </div>
@@ -87,7 +90,6 @@ export default {
     }
     .shop-banner-btn {
         position: absolute;
-        width: 326px;
         height: 40px;
         top: 370px;
         left: 40px;
@@ -102,6 +104,12 @@ export default {
             height: 26px;
             margin-left: 30px;
         }
+        .btn-3 {
+            display: inline-block;
+            width: 100px;
+            height: 26px;
+            margin-left: 20px;
+        }
     }
     .qr-code {
         position: absolute;
@@ -111,8 +119,8 @@ export default {
         opacity: 0;
         border-radius: 16px;
         border: 1px solid #e8e5e5;
-        top: 300px;
-        left: 380px;
+        top: 400px;
+        left: 140px;
         z-index: 5;
         background-size: cover;
         background-image: url(~assets/images/mini-program.jpg);
@@ -125,7 +133,7 @@ export default {
 
 .shop-specs {
     position: relative;
-    width: 1290px;
+    width: 1280px;
     height: 600px;
     margin: 0 auto;
     margin-top: -60px;
@@ -187,17 +195,25 @@ export default {
     .taobao-btn {
         position: absolute;
         content: "";
-        width: 152px;
+        width: 130px;
         height: 52px;
-        right: 362px;
+        right: 385px;
         top: 364px;
     }
     .mini-program-btn {
         position: absolute;
         content: "";
-        width: 152px;
+        width: 140px;
         height: 52px;
-        right: 182px;
+        right: 240px;
+        top: 364px;
+    }
+    .jd-btn {
+      position: absolute;
+        content: "";
+        width: 130px;
+        height: 52px;
+        right: 92px;
         top: 364px;
     }
     .qr-code {
@@ -209,7 +225,7 @@ export default {
         border-radius: 16px;
         border: 1px solid #e8e5e5;
         top: 426px;
-        right: 116px;
+        right: 160px;
         z-index: 5;
         background-size: cover;
         background-image: url(~assets/images/mini-program.jpg);
@@ -233,22 +249,32 @@ export default {
     .taobao-btn {
         position: absolute;
         content: "";
-        width: 110px;
+        width: 120px;
         height: 22px;
-        top: 164px;
+        top: 133px;
         left: 0;
-        right: 140px;
+        right: 315px;
         margin: 0 auto;
     }
     .mini-program-btn {
         position: absolute;
         content: "";
-        width: 134px;
+        width: 156px;
         height: 22px;
-        top: 164px;
+        top: 133px;
         left: 0;
-        right: -160px;
+        right: -36px;
         margin: 0 auto;
+    }
+    .jd-btn {
+      position: absolute;
+      content: "";
+      width: 96px;
+      height: 22px;
+      top: 133px;
+      left: 0;
+      right: -337px;
+      margin: 0 auto;
     }
     .qr-code {
         position: absolute;
@@ -258,8 +284,8 @@ export default {
         opacity: 0;
         border-radius: 16px;
         border: 1px solid #e8e5e5;
-        top: 200px;
-        right: 420px;
+        top: 170px;
+        right: 480px;
         z-index: 5;
         background-size: cover;
         background-image: url(~assets/images/mini-program.jpg);
