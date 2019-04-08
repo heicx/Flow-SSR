@@ -38,6 +38,6 @@ export default {
 <style src='../assets/style/scss/common.scss' lang='scss'></style>
 <style lang='scss' scoped>
 .app-wrap {
-  min-width: 1400px;
+  min-width: 1280px;
 }
 </style>
