@@ -136,6 +136,7 @@ export default {
     width: 1280px;
     height: 600px;
     margin: 0 auto;
+    left: -5px;
     margin-top: -60px;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,7 +163,7 @@ export default {
         width: 38px;
         height: 38px;
         border-radius: 50%;
-        right: 428px;
+        right: 424px;
         top: 290px;
     }
     .blue-btn {
@@ -171,7 +172,7 @@ export default {
         width: 38px;
         height: 38px;
         border-radius: 50%;
-        right: 372px;
+        right: 368px;
         top: 290px;
     }
     .white-btn {
@@ -180,7 +181,7 @@ export default {
         width: 38px;
         height: 38px;
         border-radius: 50%;
-        right: 316px;
+        right: 312px;
         top: 290px;
     }
     .pink-btn {
@@ -189,7 +190,7 @@ export default {
         width: 38px;
         height: 38px;
         border-radius: 50%;
-        right: 260px;
+        right: 256px;
         top: 290px;
     }
     .taobao-btn {
@@ -197,15 +198,15 @@ export default {
         content: "";
         width: 130px;
         height: 52px;
-        right: 385px;
+        right: 380px;
         top: 364px;
     }
     .mini-program-btn {
         position: absolute;
         content: "";
-        width: 140px;
+        width: 126px;
         height: 52px;
-        right: 240px;
+        right: 235px;
         top: 364px;
     }
     .jd-btn {
@@ -213,7 +214,7 @@ export default {
         content: "";
         width: 130px;
         height: 52px;
-        right: 92px;
+        right: 87px;
         top: 364px;
     }
     .qr-code {
@@ -249,31 +250,31 @@ export default {
     .taobao-btn {
         position: absolute;
         content: "";
-        width: 120px;
+        width: 100px;
         height: 22px;
-        top: 133px;
+        top: 163px;
         left: 0;
-        right: 315px;
+        right: 264px;
         margin: 0 auto;
     }
     .mini-program-btn {
         position: absolute;
         content: "";
-        width: 156px;
+        width: 132px;
         height: 22px;
-        top: 133px;
+        top: 163px;
         left: 0;
-        right: -36px;
+        right: -30px;
         margin: 0 auto;
     }
     .jd-btn {
       position: absolute;
       content: "";
-      width: 96px;
+      width: 84px;
       height: 22px;
-      top: 133px;
+      top: 163px;
       left: 0;
-      right: -337px;
+      right: -283px;
       margin: 0 auto;
     }
     .qr-code {
@@ -284,7 +285,7 @@ export default {
         opacity: 0;
         border-radius: 16px;
         border: 1px solid #e8e5e5;
-        top: 170px;
+        top: 200px;
         right: 480px;
         z-index: 5;
         background-size: cover;
