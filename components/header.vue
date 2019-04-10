@@ -4,7 +4,8 @@
       <router-link class="topbar-logo" to='/' tag='a'></router-link>
 			<div class="topbar-tabs">
 				<router-link v-for='(item, index) in list' :key='index' :class='{"active": item.alias.indexOf($route.name) > -1}' :to='item.link' tag='a'>{{item.name}}{{$route.test}}</router-link>
-			</div>
+        <a href="//www.flowclub.com/complaint" target="_blank" class="nuxt-link-active">媒体资源</a>
+      </div>
 		</div>
 	</div>
 </template>
@@ -33,7 +34,7 @@ export default {
 					name: '关于我们',
 					alias: 'about',
 					link: '/about'
-				}
+				},
 			]
 		}
 	}
