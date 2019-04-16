@@ -565,7 +565,7 @@ export default {
         height: 650px;
     }
     .banner-img-2 {
-        height: 885px;
+        height: 960px;
         .img {
             height: 980px;
         }
