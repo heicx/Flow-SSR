@@ -1,22 +1,19 @@
 # Flow-SSR
 
-> Flow-SSR
+> Flow-SSR [Nuxt.js docs](https://nuxtjs.org).
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装依赖包
 $ npm install
 
-# serve with hot reload at localhost:3000
+# 本地热启动
 $ npm run dev
 
-# build for production and launch server
+# 打包
 $ npm run build
+
+# 项目启动（可以不用）
 $ npm start
-
-# generate static project
-$ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
