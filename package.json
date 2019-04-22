@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "FLOW 福禄 换弹雾化烟 是新一代电子烟产品，不含致癌焦油，无需点火，拿起就抽，让您摆脱传统香烟的种种限制，生活更自由，身边人更自在。",
   "author": "heichenxuan",
-  "keywords": ["FLOW,福禄,FLOW福禄,FLOW电子烟,福禄电子烟,FLOW雾化烟,福禄雾化烟,FLOW福禄电子烟,FLOW福禄雾化烟,朱萧木"],
+  "keywords": [
+    "FLOW,福禄,FLOW福禄,FLOW电子烟,福禄电子烟,FLOW雾化烟,福禄雾化烟,FLOW福禄电子烟,FLOW福禄雾化烟,朱萧木"
+  ],
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
@@ -12,10 +14,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "core-js": "^2.6.5",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
     "koa": "^2.6.2",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt": "^2.4.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^3.1.0",
