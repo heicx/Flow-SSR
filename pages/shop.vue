@@ -70,171 +70,171 @@ export default {
 }
 
 .shop-banner-container {
-    width: 100%;
-    height: 598px;
-    background-image: url(~assets/images/shop-box-banner.jpg);
-    background-image: -webkit-image-set(url(~assets/images/shop-box-banner.jpg) 1x,url(~assets/images/shop-box-banner@2x.jpg) 2x);
+  width: 100%;
+  height: 598px;
+  background-image: url(~assets/images/shop-box-banner.jpg);
+  background-image: -webkit-image-set(url(~assets/images/shop-box-banner.jpg) 1x,url(~assets/images/shop-box-banner@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .shop-banner {
+    position: relative;
+    width: 1220px;
+    height: 648px;
+    margin: 0 auto;
+    background-image: url(~assets/images/shop-box-banner-text.png);
+    background-image: -webkit-image-set(url(~assets/images/shop-box-banner-text.png) 1x,url(~assets/images/shop-box-banner-text@2x.png) 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    .shop-banner {
-        position: relative;
-        width: 1220px;
-        height: 648px;
-        margin: 0 auto;
-        background-image: url(~assets/images/shop-box-banner-text.png);
-        background-image: -webkit-image-set(url(~assets/images/shop-box-banner-text.png) 1x,url(~assets/images/shop-box-banner-text@2x.png) 2x);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+  }
+  .shop-banner-btn {
+    position: absolute;
+    height: 40px;
+    top: 370px;
+    left: 40px;
+    .btn-1 {
+      display: inline-block;
+      width: 130px;
+      height: 26px;
     }
-    .shop-banner-btn {
-        position: absolute;
-        height: 40px;
-        top: 370px;
-        left: 40px;
-        .btn-1 {
-            display: inline-block;
-            width: 130px;
-            height: 26px;
-        }
-        .btn-2 {
-            display: inline-block;
-            width: 160px;
-            height: 26px;
-            margin-left: 30px;
-        }
-        .btn-3 {
-            display: inline-block;
-            width: 100px;
-            height: 26px;
-            margin-left: 20px;
-        }
+    .btn-2 {
+      display: inline-block;
+      width: 160px;
+      height: 26px;
+      margin-left: 30px;
     }
-    .qr-code {
-        position: absolute;
-        width: 280px;
-        height: 280px;
-        transition: all .15s ease-out;
-        opacity: 0;
-        border-radius: 16px;
-        border: 1px solid #e8e5e5;
-        top: 400px;
-        left: 140px;
-        z-index: 5;
-        background-size: cover;
-        background-image: url(~assets/images/mini-program.jpg);
-        background-image: -webkit-image-set(url(~assets/images/mini-program.jpg) 1x,url(~assets/images/mini-program@2x.jpg) 2x);
-        &.qr-code-anim {
-            opacity: 1;
-        }
+    .btn-3 {
+      display: inline-block;
+      width: 100px;
+      height: 26px;
+      margin-left: 20px;
     }
+  }
+  .qr-code {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    transition: all .15s ease-out;
+    opacity: 0;
+    border-radius: 16px;
+    border: 1px solid #e8e5e5;
+    top: 400px;
+    left: 140px;
+    z-index: 5;
+    background-size: cover;
+    background-image: url(~assets/images/mini-program.jpg);
+    background-image: -webkit-image-set(url(~assets/images/mini-program.jpg) 1x,url(~assets/images/mini-program@2x.jpg) 2x);
+    &.qr-code-anim {
+      opacity: 1;
+    }
+  }
 }
 
 .shop-specs {
-    position: relative;
-    width: 1280px;
-    height: 600px;
-    margin: 0 auto;
-    left: -5px;
-    margin-top: -60px;
-    background-repeat: no-repeat;
-    background-position: center;
+  position: relative;
+  width: 1280px;
+  height: 600px;
+  margin: 0 auto;
+  left: -5px;
+  margin-top: -60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &.black {
+    background-image: url(~assets/images/shop-box-black.png);
+    background-image: -webkit-image-set(url(~assets/images/shop-box-black.png) 1x,url(~assets/images/shop-box-black@2x.png) 2x);
+  }
+  &.blue {
+    background-image: url(~assets/images/shop-box-blue.png);
+    background-image: -webkit-image-set(url(~assets/images/shop-box-blue.png) 1x,url(~assets/images/shop-box-blue@2x.png) 2x);
+  }
+  &.white {
+    background-image: url(~assets/images/shop-box-white.png);
+    background-image: -webkit-image-set(url(~assets/images/shop-box-white.png) 1x,url(~assets/images/shop-box-white@2x.png) 2x);
+  }
+  &.pink {
+    background-image: url(~assets/images/shop-box-pink.png);
+    background-image: -webkit-image-set(url(~assets/images/shop-box-pink.png) 1x,url(~assets/images/shop-box-pink@2x.png) 2x);
+  }
+  .black-btn {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    right: 424px;
+    top: 290px;
+  }
+  .blue-btn {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    right: 368px;
+    top: 290px;
+  }
+  .white-btn {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    right: 312px;
+    top: 290px;
+  }
+  .pink-btn {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    right: 256px;
+    top: 290px;
+  }
+  .taobao-btn {
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 52px;
+    right: 380px;
+    top: 364px;
+  }
+  .mini-program-btn {
+    position: absolute;
+    content: "";
+    width: 126px;
+    height: 52px;
+    right: 235px;
+    top: 364px;
+  }
+  .jd-btn {
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 52px;
+    right: 87px;
+    top: 364px;
+  }
+  .qr-code {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    transition: all .15s ease-out;
+    opacity: 0;
+    border-radius: 16px;
+    border: 1px solid #e8e5e5;
+    top: 426px;
+    right: 160px;
+    z-index: 5;
     background-size: cover;
-    &.black {
-        background-image: url(~assets/images/shop-box-black.png);
-        background-image: -webkit-image-set(url(~assets/images/shop-box-black.png) 1x,url(~assets/images/shop-box-black@2x.png) 2x);
+    background-image: url(~assets/images/mini-program.jpg);
+    background-image: -webkit-image-set(url(~assets/images/mini-program.jpg) 1x,url(~assets/images/mini-program@2x.jpg) 2x);
+    &.qr-code-anim {
+      opacity: 1;
     }
-    &.blue {
-        background-image: url(~assets/images/shop-box-blue.png);
-        background-image: -webkit-image-set(url(~assets/images/shop-box-blue.png) 1x,url(~assets/images/shop-box-blue@2x.png) 2x);
-    }
-    &.white {
-        background-image: url(~assets/images/shop-box-white.png);
-        background-image: -webkit-image-set(url(~assets/images/shop-box-white.png) 1x,url(~assets/images/shop-box-white@2x.png) 2x);
-    }
-    &.pink {
-        background-image: url(~assets/images/shop-box-pink.png);
-        background-image: -webkit-image-set(url(~assets/images/shop-box-pink.png) 1x,url(~assets/images/shop-box-pink@2x.png) 2x);
-    }
-    .black-btn {
-        position: absolute;
-        content: "";
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        right: 424px;
-        top: 290px;
-    }
-    .blue-btn {
-        position: absolute;
-        content: "";
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        right: 368px;
-        top: 290px;
-    }
-    .white-btn {
-        position: absolute;
-        content: "";
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        right: 312px;
-        top: 290px;
-    }
-    .pink-btn {
-        position: absolute;
-        content: "";
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        right: 256px;
-        top: 290px;
-    }
-    .taobao-btn {
-        position: absolute;
-        content: "";
-        width: 130px;
-        height: 52px;
-        right: 380px;
-        top: 364px;
-    }
-    .mini-program-btn {
-        position: absolute;
-        content: "";
-        width: 126px;
-        height: 52px;
-        right: 235px;
-        top: 364px;
-    }
-    .jd-btn {
-      position: absolute;
-        content: "";
-        width: 130px;
-        height: 52px;
-        right: 87px;
-        top: 364px;
-    }
-    .qr-code {
-        position: absolute;
-        width: 280px;
-        height: 280px;
-        transition: all .15s ease-out;
-        opacity: 0;
-        border-radius: 16px;
-        border: 1px solid #e8e5e5;
-        top: 426px;
-        right: 160px;
-        z-index: 5;
-        background-size: cover;
-        background-image: url(~assets/images/mini-program.jpg);
-        background-image: -webkit-image-set(url(~assets/images/mini-program.jpg) 1x,url(~assets/images/mini-program@2x.jpg) 2x);
-        &.qr-code-anim {
-            opacity: 1;
-        }
-    }
+  }
 }
 
 .shop-colors {
