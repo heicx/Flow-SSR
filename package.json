@@ -1,10 +1,10 @@
 {
   "name": "Flow-SSR",
   "version": "1.0.0",
-  "description": "FLOW 福禄 换弹雾化烟 是新一代电子烟产品，不含致癌焦油，无需点火，拿起就抽，让您摆脱传统香烟的种种限制，生活更自由，身边人更自在。",
+  "description": "FLOW 福禄 是新一代电子雾化烟品牌，围绕换弹雾化烟、一次性雾化烟等产品，以用户体验为驱动，0焦油、0二手烟、无明火，为烟民提供更多样的生活方式。",
   "author": "heichenxuan",
   "keywords": [
-    "FLOW,福禄,FLOW福禄,FLOW电子烟,福禄电子烟,FLOW雾化烟,福禄雾化烟,FLOW福禄电子烟,FLOW福禄雾化烟,朱萧木"
+    "FLOW,福禄,FLOW福禄,FLOW电子烟,福禄电子烟,FLOW雾化烟,福禄雾化烟,FLOW福禄电子烟,FLOW福禄雾化烟,一次性小烟,朱萧木"
   ],
   "private": true,
   "scripts": {
