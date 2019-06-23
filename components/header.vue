@@ -34,6 +34,11 @@ export default {
 					name: '关于我们',
 					alias: 'about',
 					link: '/about'
+        },
+        {
+					name: '招商加盟',
+					alias: 'investment',
+					link: '/investment'
 				},
 			]
 		}
