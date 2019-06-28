@@ -32,11 +32,11 @@ body {
 		float: right;
 		height: 72px;
 		line-height: 72px;
-		font-size: $fontSize18;
+		font-size: $fontSize16;
 		color: #8d8d8d;
 		a {
 			display: inline-block;
-			margin-right: 40px;
+			margin-right: 36px;
 			cursor: pointer;
 			&.active {
 				cursor: pointer;
