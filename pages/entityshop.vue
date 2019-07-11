@@ -6,7 +6,9 @@
       <li class="entityshop-img-3"></li>
       <li class="entityshop-img-4"></li>
       <li class="entityshop-img-5"></li>
-      <li class="entityshop-img-6"></li>
+      <li class="entityshop-img-6">
+        <span>FLOW加盟 福禄加盟 FLOW招商 福禄招商</span>
+      </li>
     </ul>
     <div class="footer-menu">
       <div class="content">
@@ -48,6 +50,12 @@ export default {
 
 .entityshop-wrap {
   background: #fff;
+  span {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    z-index: -1;
+  }
 }
 
 .entityshop-img-1 {

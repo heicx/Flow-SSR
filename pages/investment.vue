@@ -8,7 +8,9 @@
       <li class="investment-img-5"></li>
       <li class="investment-img-6"></li>
       <li class="investment-img-7"></li>
-      <li class="investment-img-8"></li>
+      <li class="investment-img-8">
+        <span>FLOW加盟 福禄加盟 FLOW招商 福禄招商</span>
+      </li>
     </ul>
     <div class="footer-menu">
       <div class="content">
@@ -50,6 +52,12 @@ export default {
 
 .investment-wrap {
   background: #fff;
+  span {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    z-index: -1;
+  }
 }
 
 .investment-img-1 {
