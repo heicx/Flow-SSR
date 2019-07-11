@@ -48,14 +48,14 @@
       </div>
     </div>
     <div class="prohibit"></div>
-    <div class="confirm-tips" v-if="isShowTips">
+    <!-- <div class="confirm-tips" v-if="isShowTips">
       <div class="confirm-text"></div>
       <div class="confirm-btn">
         <a class="btn-ok" @click="tipsConfirm(true)"></a>
         <a class="btn-no" @click="tipsConfirm()"></a>
       </div>
     </div>
-    <div class="mask" v-if="isShowTips"></div>
+    <div class="mask" v-if="isShowTips"></div> -->
   </section>
 </template>
 
@@ -66,7 +66,7 @@ export default {
   layout: 'common',
   data() {
     return {
-      isShowTips: !localStorage.getItem('_tips'),
+      // isShowTips: !localStorage.getItem('_tips'),
       videoStatus: ""
     }
   },
