@@ -34,23 +34,66 @@ body {
 		line-height: 72px;
 		font-size: $fontSize16;
 		color: #8d8d8d;
-		a {
+		.tabs-item {
+      position: relative;
 			display: inline-block;
 			margin-right: 36px;
-			cursor: pointer;
-			&.active {
-				cursor: pointer;
-				color: #efc03f;
-				font-weight: bold;
-			}
-			&:hover {
-				cursor: pointer;
-				color: #efc03f;
-			}
-			&:last-child {
-				margin-right: 0;
-			}
-		}
+      cursor: pointer;
+      .sub-items {
+        position: absolute;
+        top: 24px;
+        left: -17px;
+        width: 100px;
+        padding: 8px 0;
+        border-radius: 4px;
+        cursor: auto;
+        font-size: 14px;
+        text-align: center;
+        background: #1a1a1a;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .15s ease-out;
+        z-index: 5;
+        &.active {
+          visibility: visible;
+          opacity: 1;
+        }
+        li {
+          height: 34px;
+          line-height: 34px;
+          color: #8d8d8d;
+          &.active {
+            cursor: pointer;
+            color: #efc03f;
+            font-weight: bold;
+          }
+          &:hover {
+            cursor: pointer;
+            color: #efc03f;
+          }
+        }
+      }
+      .item-name {
+        height: 24px;
+        line-height: 24px;
+        &.active {
+          cursor: pointer;
+          color: #efc03f;
+          font-weight: bold;
+        }
+        &:hover {
+          cursor: pointer;
+				  color: #efc03f;
+        }
+      }
+    }
+    a {
+      color: #8d8d8d;
+      &:hover {
+        cursor: pointer;
+        color: #efc03f;
+      }
+    }
 	}
 }
 
