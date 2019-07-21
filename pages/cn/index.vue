@@ -47,7 +47,9 @@
         <router-link to="/shop" class="official-btn"></router-link>
       </div>
     </div>
-    <div class="prohibit"></div>
+    <div class="prohibit">
+      <router-link to="/cn/news" class="news-hidden">新闻动态</router-link>
+    </div>
     <!-- <div class="confirm-tips" v-if="isShowTips">
       <div class="confirm-text"></div>
       <div class="confirm-btn">
@@ -413,6 +415,11 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  .news-hidden {
+    position: absolute;
+    font-size: 0;
+    z-index: -1;
+  }
 }
 
 .confirm-tips {

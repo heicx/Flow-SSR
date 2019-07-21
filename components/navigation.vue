@@ -2,8 +2,8 @@
 	<div class="header-nav" v-if="!isHide">
     <div class="container clearfix">
       <ul class="nav-list">
-        <li v-for='(item, index) in list' :key='index' :class='{"active": item.link == $route.path}'>
-          <router-link :to='item.link'>{{item.name}}</router-link>
+        <li v-for='(item, index) in list' :key='index' :class='{"active": item.alias.indexOf($route.name) > -1}'>
+          <router-link :to='getEnvStr + item.link'>{{item.name}}</router-link>
         </li>
       </ul>
       <a class="nav-btn" href="/shop">现在购买</a>
@@ -19,13 +19,22 @@ export default {
       list: [
         {
           name: '核心技术',
+          alias: ['tech', 'cn-tech'],
           link: '/tech'
         },
         {
           name: '产品规格',
+          alias: ['spec', 'cn-spec'],
           link: '/spec'
         }
       ]
+    }
+  },
+  computed: {
+    getEnvStr () {
+
+     console.log(this.$route)
+      return !!window.location.pathname.match(/^\/cn/) ? '/cn' : '';
     }
   }
 }

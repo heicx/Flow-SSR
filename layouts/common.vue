@@ -20,7 +20,7 @@ export default {
     }
   },
   mounted () {
-    this.isHide = !(this.$route.name == 'tech' || this.$route.name == 'spec');
+    this.isHide = ['tech', 'spec', 'cn-tech', 'cn-spec'].indexOf(this.$route.name) < 0;
   },
   created() {
     Bus.$on('showNav', (status)=> {
