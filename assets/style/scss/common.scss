@@ -33,7 +33,22 @@ body {
 		height: 72px;
 		line-height: 72px;
 		font-size: $fontSize16;
-		color: #8d8d8d;
+    color: #8d8d8d;
+    .tabs-item-old {
+      position: relative;
+			display: inline-block;
+			margin-right: 36px;
+      cursor: pointer;
+      &.active {
+        cursor: pointer;
+        color: #efc03f;
+        font-weight: bold;
+      }
+      &:hover {
+        cursor: pointer;
+        color: #efc03f;
+      }
+    }
 		.tabs-item {
       position: relative;
 			display: inline-block;
