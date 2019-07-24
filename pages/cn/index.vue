@@ -1,46 +1,57 @@
 <template>
   <section class="home-wrap">
-    <div class="banner-img-1"></div>
-    <div class="banner-img-2">
-      <div class="img"></div>
+    <div class="cn-banner-img-1">
+      <span class="tips-hidden">未成年人禁止使用</span>
+    </div>
+    <div class="cn-banner-img-2">
+      <div class="img">
+        <span class="tips-hidden">机身采用阳极氧化、纳米注塑工艺，浑然一体；烟嘴依据人体工学设计，“嘴感”一流；配备新一代尼古丁盐烟油、极速蜂窝化技术，给你醇正、细腻、畅快的吸入体验；拥有四重防漏结构设计、“一支烟”震动提醒、纳米涂层防水等领先技术的电子烟</span>
+      </div>
       <div class="text-container">
         <span class="text"></span>
-        <div class="banner-btn">
+        <div class="cn-banner-btn">
           <a class="btn-1" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
           <a class="btn-2" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c- s.w4004-21525864382.4.3d703438MaVxUV&id=590715241618"></a>
         </div>
       </div>
     </div>
-    <div class="introduce-container">
-      <div class="introduce">
-        <h3 class="slogan"></h3>
+    <div class="cn-introduce-container">
+      <div class="cn-introduce">
+        <h3 class="cn-slogan">
+          <span class="tips-hidden">有 FLOW，你总是更自在</span>
+        </h3>
         <transition name="fade">
           <ul>
-            <li class="video-1" @mouseover="mouseover('videoFlowA', $event)" @mouseout="mouseout('videoFlowA')">
+            <li class="cn-video-1" @mouseover="mouseover('videoFlowA', $event)" @mouseout="mouseout('videoFlowA')">
               <i class="video-poster-1"></i>
+              <span class="tips-hidden">提神、无烟味、呵护身边人的健康</span>
               <video muted="muted" id="videoFlowA" v-show="videoStatus == 'videoFlowA'" src="http://static.flowclub.com/Flow-A.mp4" loop="loop"></video>
             </li>
-            <li class="video-2" @mouseover="mouseover('videoFlowB')" @mouseout="mouseout('videoFlowB')">
+            <li class="cn-video-2" @mouseover="mouseover('videoFlowB')" @mouseout="mouseout('videoFlowB')">
               <i class="video-poster-2"></i>
+              <span class="tips-hidden">无焦油、无留味、呵护家人健康</span>
               <video muted="muted" id="videoFlowB" v-show="videoStatus == 'videoFlowB'" src="http://static.flowclub.com/Flow-B.mp4" loop="loop"></video>
             </li>
-            <li class="video-3" @mouseover="mouseover('videoFlowC')" @mouseout="mouseout('videoFlowC')">
+            <li class="cn-video-3" @mouseover="mouseover('videoFlowC')" @mouseout="mouseout('videoFlowC')">
               <i class="video-poster-3"></i>
+              <span class="tips-hidden">提神、无火、无烟灰</span>
               <video muted="muted" id="videoFlowC" v-show="videoStatus == 'videoFlowC'" src="http://static.flowclub.com/Flow-C.mp4" loop="loop"></video>
             </li>
-            <li class="video-4" @mouseover="mouseover('videoFlowD')" @mouseout="mouseout('videoFlowD')">
+            <li class="cn-video-4" @mouseover="mouseover('videoFlowD')" @mouseout="mouseout('videoFlowD')">
               <i class="video-poster-4"></i>
+              <span class="tips-hidden">放松、无火、防水</span>
               <video muted="muted" id="videoFlowD" v-show="videoStatus == 'videoFlowD'" src="http://static.flowclub.com/Flow-D.mp4" loop="loop"></video>
             </li>
-            <li class="video-5" @mouseover="mouseover('videoFlowE')" @mouseout="mouseout('videoFlowE')">
+            <li class="cn-video-5" @mouseover="mouseover('videoFlowE')" @mouseout="mouseout('videoFlowE')">
               <i class="video-poster-5"></i>
+              <span class="tips-hidden">提神、无火、无残留异味</span>
               <video muted="muted" id="videoFlowE" v-show="videoStatus == 'videoFlowE'" src="http://static.flowclub.com/Flow-E.mp4" loop="loop"></video>
             </li>
           </ul>
         </transition>
       </div>
     </div>
-    <div class="footer-menu">
+    <div class="cn-footer-menu">
       <div class="content">
         <a></a>
         <router-link to="/effect" class="hotlink"></router-link>
@@ -112,6 +123,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.tips-hidden {
+  opacity: 0;
+}
 .fade-enter-active {
     #videoFlowA {
       transition: opacity .5s;
@@ -124,11 +138,11 @@ export default {
   }
 }
 
-.banner-img-1, .banner-img-2 {
+.cn-banner-img-1, .cn-banner-img-2 {
   position: relative;
 }
 
-.banner-img-1 {
+.cn-banner-img-1 {
   // height: 788px;
   // overflow: hidden;
   /** 首屏 Banner 替换 Video **/
@@ -169,7 +183,7 @@ export default {
   }
 }
 
-.banner-img-2 {
+.cn-banner-img-2 {
   height: 1163px;
   .img {
     position: absolute;
@@ -191,7 +205,7 @@ export default {
     width: 1200px;
     margin: 0 auto;
     padding-top: 314px;
-    .banner-btn {
+    .cn-banner-btn {
       position: absolute;
       content: "";
       bottom: 22px;
@@ -223,13 +237,13 @@ export default {
   }
 }
 
-.introduce-container {
+.cn-introduce-container {
   width: 100%;
   background-color:#f8f9f9;
 	background-image:-webkit-linear-gradient(top,#f5f5f5, #f9fafa,#ffffff);
 	background-image:linear-gradient(top,#f5f5f5, #f9fafa,#ffffff);
 }
-.introduce {
+.cn-introduce {
   width: 1300px;
   margin: 0 auto;
   li {
@@ -242,7 +256,7 @@ export default {
   li:hover {
     opacity: 1;
   }
-  .slogan {
+  .cn-slogan {
     width: 1300px;
     height: 410px;
     margin: 0 auto;
@@ -252,7 +266,7 @@ export default {
     background-size: contain;
     background-position: center;
   }
-  .video-1 {
+  .cn-video-1 {
     width: 1300px;
     height: 540px;
     background-image: url(~assets/images/video-box-1.png);
@@ -283,7 +297,7 @@ export default {
       border-radius: 15px 0 0 15px;
     }
   }
-  .video-2 {
+  .cn-video-2 {
     width: 1300px;
     height: 540px;
     background-image: url(~assets/images/video-box-2.png);
@@ -313,7 +327,7 @@ export default {
       border-radius:  0 15px 15px 0;
     }
   }
-  .video-3 {
+  .cn-video-3 {
     width: 1300px;
     height: 540px;
     background-image: url(~assets/images/video-box-3.png);
@@ -343,7 +357,7 @@ export default {
       border-radius: 15px 0 0 15px;
     }
   }
-  .video-4 {
+  .cn-video-4 {
     width: 1300px;
     height: 540px;
     background-image: url(~assets/images/video-box-4.png);
@@ -373,7 +387,7 @@ export default {
       border-radius: 0 15px 15px 0;
     }
   }
-  .video-5 {
+  .cn-video-5 {
     width: 1300px;
     height: 540px;
     padding-bottom: 60px;
@@ -487,7 +501,7 @@ export default {
   z-index: 30;
 }
 
-.footer-menu {
+.cn-footer-menu {
   position: fixed;
   left: 0;
   right: 0;
@@ -538,10 +552,10 @@ export default {
 }
 
 @media screen and (max-width: 1414px) {
-  .banner-img-1 {
+  .cn-banner-img-1 {
     height: 615px;
   }
-  .banner-img-2 {
+  .cn-banner-img-2 {
     height: 885px;
     .img {
       height: 900px;
@@ -553,7 +567,7 @@ export default {
         height: 361px;
         left: 90px;
       }
-      .banner-btn {
+      .cn-banner-btn {
         bottom: -343px;
         height: 39px;
         left: 102px;
@@ -570,10 +584,10 @@ export default {
 }
 
 @media screen and (min-width: 1415px) and (max-width: 1600px) {
-  .banner-img-1 {
+  .cn-banner-img-1 {
     height: 650px;
   }
-  .banner-img-2 {
+  .cn-banner-img-2 {
     height: 960px;
     .img {
       height: 980px;
@@ -585,7 +599,7 @@ export default {
         height: 393px;
         left: 70px;
       }
-      .banner-btn {
+      .cn-banner-btn {
         bottom: -374px;
         height: 43px;
         left: 84px;
@@ -603,10 +617,10 @@ export default {
 
 
 @media screen and (min-width: 1601px) and (max-width: 1919px){
-  .banner-img-1 {
+  .cn-banner-img-1 {
     height: 830px;
   }
-  .banner-img-2 {
+  .cn-banner-img-2 {
     height: 806px;
     .img {
       height: 820px;
@@ -618,7 +632,7 @@ export default {
         height: 397px;
         left: 50px;
       }
-      .banner-btn {
+      .cn-banner-btn {
         bottom: -378px;
         height: 44px;
         left: 64px;
@@ -635,10 +649,10 @@ export default {
 }
 
 @media screen and (min-width: 1920px) {
-  .banner-img-1 {
+  .cn-banner-img-1 {
     height: 850px;
   }
-  .banner-img-2 {
+  .cn-banner-img-2 {
     height: 963px;
     .img {
       height: 980px;
@@ -650,7 +664,7 @@ export default {
         height: 393px;
         left: 50px;
       }
-      .banner-btn {
+      .cn-banner-btn {
         bottom: -376px;
         height: 44px;
         left: 64px;
