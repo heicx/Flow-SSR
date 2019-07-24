@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="app-wrap">
-		<app-header></app-header>
+		<app-header v-if="isCN"></app-header>
+    <app-old-header v-else></app-old-header>
     <app-navigation :isHide='isHide'></app-navigation>
     <nuxt />
 		<app-footer></app-footer>
@@ -9,6 +10,7 @@
 
 <script>
 import appHeader from '../components/header.vue';
+import appOldHeader from '../components/oldHeader.vue';
 import appNavigation from '../components/navigation.vue';
 import appFooter from '../components/footer.vue';
 import Bus from '../assets/bus';
@@ -16,7 +18,8 @@ import Bus from '../assets/bus';
 export default {
   data() {
     return {
-      isHide: true
+      isHide: true,
+      isCN: !!window.location.pathname.match(/^\/cn/)
     }
   },
   mounted () {
@@ -29,6 +32,7 @@ export default {
   },
   components: {
     appHeader,
+    appOldHeader,
     appNavigation,
     appFooter
   },
