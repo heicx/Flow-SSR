@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="app-wrap">
-		<app-header v-if="isCN"></app-header>
-    <app-old-header v-else></app-old-header>
+    <div v-if="isCN !== null">
+      <app-header v-if="isCN"></app-header>
+      <app-old-header v-else></app-old-header>
+    </div>
     <app-navigation :isHide='isHide'></app-navigation>
     <nuxt />
 		<app-footer></app-footer>
@@ -19,13 +21,21 @@ export default {
   data() {
     return {
       isHide: true,
-      isCN: !!window.location.pathname.match(/^\/cn/)
+      isCN: null
     }
   },
   mounted () {
+    if (process.client) {
+      this.isCN = !!window.location.pathname.match(/^\/cn/)
+    } else {
+      this.isCN = false
+    }
+
     this.isHide = ['tech', 'spec', 'cn-tech', 'cn-spec'].indexOf(this.$route.name) < 0;
   },
   created() {
+
+
     Bus.$on('showNav', (status)=> {
       this.isHide = !status;
     });

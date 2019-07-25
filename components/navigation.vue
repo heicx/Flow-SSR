@@ -32,8 +32,6 @@ export default {
   },
   computed: {
     getEnvStr () {
-
-     console.log(this.$route)
       return !!window.location.pathname.match(/^\/cn/) ? '/cn' : '';
     }
   }

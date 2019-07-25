@@ -43,7 +43,12 @@ export default {
   },
   computed: {
     tabList() {
-      const cnEvnStr = !!window.location.pathname.match(/^\/cn/) ? '/cn' : '';
+      let cnEvnStr = '';
+
+      if (process.client) {
+        cnEvnStr = !!window.location.pathname.match(/^\/cn/) ? '/cn' : '';
+      }
+
       let list = [
 				{
 					name: '首页',
