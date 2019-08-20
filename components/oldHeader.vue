@@ -79,7 +79,7 @@ export default {
 					link: '/about'
         },
         {
-          name: '省市代招商',
+          name: '经销商合作',
 					alias: {
             path: ['investment'],
           },

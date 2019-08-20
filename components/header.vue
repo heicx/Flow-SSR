@@ -106,7 +106,7 @@ export default {
             path: ['entityshop', 'cn-entityshop', 'investment', 'cn-investment'],
             subItems: [
               {
-                name: '省市代招商',
+                name: '经销商合作',
                 link: '/investment',
                 path: ['investment', 'cn-investment'],
               },
