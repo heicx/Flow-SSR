@@ -1,53 +1,48 @@
 <template>
-    <div class="news-wrap">
-      <card :title="title">
-        <template v-slot:card-list>
-          <ul class="news-contanier">
-            <li
-              v-for="(item, index) in detail"
-              :key="index"
-              class="news-item"
-            >
-              {{item}}
-            </li>
-          </ul>
-        </template>
-      </card>
-    </div>
+  <div class="news-wrap">
+    <card :title="news.title">
+      <template v-slot:card-list>
+        <ul class="news-contanier">
+          <li
+            v-for="(item, index) in news.detail"
+            :key="index"
+            class="news-item"
+          >
+            {{item}}
+          </li>
+        </ul>
+      </template>
+    </card>
+  </div>
 </template>
 
 <script>
 import Card from '../../../components/card';
 import NEWS from '../../../static/news.js';
 
-let title, detail;
-
 export default {
   layout: 'common',
-  validate ({ params }) {
-    for (let item of NEWS.list) {
-      if (item.id == params.id) {
-        title = item.title;
-        detail = item.detail;
-      }
-    }
-
-    // 必须是number类型
-    return /^\d+$/.test(params.id)
-  },
   data () {
     return {
-      title: title,
-      detail: detail,
-      news: NEWS.list
     }
   },
   computed: {
-    setTitle () {
-      return this.title;
-    },
-    setDetail () {
-      return ''
+    news () {
+      let title = '';
+      let detail = '';
+      const { id } = this.$route.params;
+
+      for (let item of NEWS.list) {
+        if (item.id == id) {
+          title = item.title;
+          detail = item.detail;
+        }
+      }
+
+      return {
+        title,
+        detail
+      }
     }
   },
   components: {
@@ -66,10 +61,6 @@ export default {
   .news-contanier {
     padding: 15px 25px;
   }
-  .news-title {
-    float: left;
-    margin-right: 20px;
-  }
   .news-item {
     font-size: 14px;
     line-height: 26px;
@@ -77,6 +68,7 @@ export default {
     text-align: left;
     color: #666;
     margin-top: 10px;
+    word-break: break-word;
     &:first-child {
       margin-top: 0;
     }
