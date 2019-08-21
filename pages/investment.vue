@@ -14,7 +14,7 @@
     </ul>
     <div class="footer-menu">
       <div class="content">
-        <a href="https://www.wjx.cn/jq/38734645.aspx" target="_blank"></a>
+        <a href="https://www.wjx.cn/jq/44348869.aspx" target="_blank"></a>
       </div>
     </div>
   </div>
