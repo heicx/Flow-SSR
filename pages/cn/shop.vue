@@ -32,6 +32,11 @@
 <script>
 export default {
   layout: 'common',
+  head () {
+    return {
+      title: '在线商城 - FLOW 福禄'
+    }
+  },
   data() {
     return {
       color: 'blue',

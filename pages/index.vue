@@ -64,6 +64,11 @@ import { setTimeout } from 'timers';
 
 export default {
   layout: 'common',
+  head () {
+    return {
+      title: 'FLOW 福禄 电子雾化烟 - FLOW 福禄'
+    }
+  },
   data() {
     return {
       // isShowTips: !localStorage.getItem('_tips'),

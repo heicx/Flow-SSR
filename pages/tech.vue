@@ -14,7 +14,12 @@
 
 <script>
 export default {
-  layout: 'common'
+  layout: 'common',
+  head () {
+    return {
+      title: '核心技术 - FLOW 福禄'
+    }
+  },
 }
 </script>
 

@@ -20,7 +20,12 @@
 
 <script>
 export default {
-  layout: 'common'
+  layout: 'common',
+  head () {
+    return {
+      title: '专卖店加盟 - FLOW 福禄'
+    }
+  },
 }
 </script>
 
@@ -100,8 +105,8 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(~assets/images/entityshop-img-5.jpg);
-  background-image: -webkit-image-set(url(~assets/images/entityshop-img-5.jpg) 1x,url(~assets/images/entityshop-img-5@2x.jpg) 2x);
+  background-image: url(~assets/images/entityshop-img-5.png);
+  background-image: -webkit-image-set(url(~assets/images/entityshop-img-5.png) 1x,url(~assets/images/entityshop-img-5@2x.png) 2x);
 }
 .entityshop-img-6 {
   width: 100%;

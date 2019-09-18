@@ -10,6 +10,11 @@
 <script>
 export default {
   layout: 'common',
+  head () {
+    return {
+      title: '减害安全 - FLOW 福禄'
+    }
+  },
 }
 </script>
 

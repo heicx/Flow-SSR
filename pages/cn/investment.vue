@@ -22,7 +22,12 @@
 
 <script>
 export default {
-  layout: 'common'
+  layout: 'common',
+  head () {
+    return {
+      title: '经销商合作 - FLOW 福禄'
+    }
+  },
 }
 </script>
 

@@ -54,8 +54,8 @@
     <div class="cn-footer-menu">
       <div class="content">
         <a></a>
-        <router-link to="/effect" class="hotlink"></router-link>
-        <router-link to="/shop" class="official-btn"></router-link>
+        <router-link to="/cn/effect" class="hotlink"></router-link>
+        <router-link to="/cn/shop" class="official-btn"></router-link>
       </div>
     </div>
     <div class="prohibit">
@@ -81,6 +81,11 @@ export default {
     return {
       // isShowTips: !localStorage.getItem('_tips'),
       videoStatus: ""
+    }
+  },
+  head () {
+    return {
+      title: 'FLOW 福禄 电子雾化烟 - FLOW 福禄'
     }
   },
   methods: {

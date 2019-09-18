@@ -7,7 +7,12 @@
 
 <script>
 export default {
-  layout: 'common'
+  layout: 'common',
+  head () {
+    return {
+      title: '产品规格 - FLOW 福禄'
+    }
+  },
 }
 </script>
 

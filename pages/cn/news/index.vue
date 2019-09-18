@@ -24,6 +24,11 @@ import NEWS from '../../../static/news.js';
 
 export default {
   layout: 'common',
+  head () {
+    return {
+      title: '新闻动态 - FLOW 福禄'
+    }
+  },
   data () {
     return {
       title: '新闻动态',

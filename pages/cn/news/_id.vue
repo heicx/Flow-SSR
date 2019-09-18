@@ -26,6 +26,11 @@ export default {
     return {
     }
   },
+  head () {
+    return {
+      title: `${this.news.title} - FLOW 福禄`
+    }
+  },
   computed: {
     news () {
       let title = '';
