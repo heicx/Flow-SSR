@@ -25,27 +25,27 @@
             <li class="cn-video-1" @mouseover="mouseover('videoFlowA', $event)" @mouseout="mouseout('videoFlowA')">
               <i class="video-poster-1"></i>
               <span class="tips-hidden">提神、无烟味、呵护身边人的健康</span>
-              <video muted="muted" id="videoFlowA" v-show="videoStatus == 'videoFlowA'" src="http://static.flowclub.com/Flow-A.mp4" loop="loop"></video>
+              <video muted="muted" id="videoFlowA" v-show="videoStatus == 'videoFlowA'" src="//static.flowclub.com/Flow-A.mp4" loop="loop"></video>
             </li>
             <li class="cn-video-2" @mouseover="mouseover('videoFlowB')" @mouseout="mouseout('videoFlowB')">
               <i class="video-poster-2"></i>
               <span class="tips-hidden">无焦油、无留味、呵护家人健康</span>
-              <video muted="muted" id="videoFlowB" v-show="videoStatus == 'videoFlowB'" src="http://static.flowclub.com/Flow-B.mp4" loop="loop"></video>
+              <video muted="muted" id="videoFlowB" v-show="videoStatus == 'videoFlowB'" src="//static.flowclub.com/Flow-B.mp4" loop="loop"></video>
             </li>
             <li class="cn-video-3" @mouseover="mouseover('videoFlowC')" @mouseout="mouseout('videoFlowC')">
               <i class="video-poster-3"></i>
               <span class="tips-hidden">提神、无火、无烟灰</span>
-              <video muted="muted" id="videoFlowC" v-show="videoStatus == 'videoFlowC'" src="http://static.flowclub.com/Flow-C.mp4" loop="loop"></video>
+              <video muted="muted" id="videoFlowC" v-show="videoStatus == 'videoFlowC'" src="//static.flowclub.com/Flow-C.mp4" loop="loop"></video>
             </li>
             <li class="cn-video-4" @mouseover="mouseover('videoFlowD')" @mouseout="mouseout('videoFlowD')">
               <i class="video-poster-4"></i>
               <span class="tips-hidden">放松、无火、防水</span>
-              <video muted="muted" id="videoFlowD" v-show="videoStatus == 'videoFlowD'" src="http://static.flowclub.com/Flow-D.mp4" loop="loop"></video>
+              <video muted="muted" id="videoFlowD" v-show="videoStatus == 'videoFlowD'" src="//static.flowclub.com/Flow-D.mp4" loop="loop"></video>
             </li>
             <li class="cn-video-5" @mouseover="mouseover('videoFlowE')" @mouseout="mouseout('videoFlowE')">
               <i class="video-poster-5"></i>
               <span class="tips-hidden">提神、无火、无残留异味</span>
-              <video muted="muted" id="videoFlowE" v-show="videoStatus == 'videoFlowE'" src="http://static.flowclub.com/Flow-E.mp4" loop="loop"></video>
+              <video muted="muted" id="videoFlowE" v-show="videoStatus == 'videoFlowE'" src="//static.flowclub.com/Flow-E.mp4" loop="loop"></video>
             </li>
           </ul>
         </transition>
