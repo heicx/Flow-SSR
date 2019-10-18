@@ -36,8 +36,8 @@ export default {
 .effect-img-1 {
   width: 100%;
   height: 851px;
-  background-image: url(~assets/images/health-img-2.jpg);
-  background-image: -webkit-image-set(url(~assets/images/health-img-2.jpg) 1x,url(~assets/images/health-img-2@2x.jpg) 2x);
+  background-image: url(~assets/images/health-img-2.png);
+  background-image: -webkit-image-set(url(~assets/images/health-img-2.png) 1x,url(~assets/images/health-img-2@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
