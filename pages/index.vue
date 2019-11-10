@@ -5,10 +5,10 @@
       <div class="img"></div>
       <div class="text-container">
         <span class="text"></span>
-        <div class="banner-btn">
+        <!-- <div class="banner-btn">
           <a class="btn-1" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
           <a class="btn-2" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c- s.w4004-21525864382.4.3d703438MaVxUV&id=590715241618"></a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="introduce-container">

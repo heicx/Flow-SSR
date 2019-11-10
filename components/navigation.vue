@@ -6,7 +6,7 @@
           <router-link :to='getEnvStr + item.link'>{{item.name}}</router-link>
         </li>
       </ul>
-      <a class="nav-btn" href="/shop">现在购买</a>
+      <!-- <a class="nav-btn" href="/shop">现在购买</a> -->
     </div>
 	</div>
 </template>

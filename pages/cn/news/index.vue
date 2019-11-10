@@ -13,6 +13,7 @@
               {{item.title}}
             </router-link>
           </ul>
+          {{newsList}}
         </template>
       </card>
     </div>
@@ -21,6 +22,7 @@
 <script>
 import Card from '../../../components/card';
 import NEWS from '../../../static/news.js';
+import Request from '@/core/request'
 
 export default {
   layout: 'common',
@@ -34,6 +36,18 @@ export default {
       title: '新闻动态',
       news: NEWS.list
     }
+  },
+  asyncData() {
+    console.log('allNews')
+    return Request.get('allNews').then(newsList => {
+      return {
+        newsList
+      }
+    }).catch(e => {
+      return {
+        newsList: []
+      }
+    })
   },
   components: {
     Card

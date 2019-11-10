@@ -64,13 +64,13 @@ export default {
           },
 					link: '/tech'
 				},
-				{
-					name: '在线商城',
-					alias: {
-            path: ['shop', 'cn-shop'],
-          },
-					link: '/shop'
-        },
+				// {
+				// 	name: '在线商城',
+				// 	alias: {
+        //     path: ['shop', 'cn-shop'],
+        //   },
+				// 	link: '/shop'
+        // },
         {
 					name: '关于我们',
 					alias: {

@@ -9,10 +9,10 @@
       </div>
       <div class="text-container">
         <span class="text"></span>
-        <div class="cn-banner-btn">
+        <!-- <div class="cn-banner-btn">
           <a class="btn-1" target="_blank" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.25911deblYfbnz&ft=t&id=590862990609"></a>
           <a class="btn-2" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z10.1-c- s.w4004-21525864382.4.3d703438MaVxUV&id=590715241618"></a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="cn-introduce-container">
@@ -55,7 +55,7 @@
       <div class="content">
         <a></a>
         <router-link to="/cn/effect" class="hotlink"></router-link>
-        <router-link to="/cn/shop" class="official-btn"></router-link>
+        <!-- <router-link to="/cn/shop" class="official-btn"></router-link> -->
       </div>
     </div>
     <div class="prohibit">

@@ -26,7 +26,7 @@
 				</li>
 				<li class="integrity">
 					<a href="https://credit.cecc-cx.com/credit/verifyseal.php?sn=2008070300100000031&ct=df&pa=294096" target="_blank">
-						<img :class="{'bottom': hasBottom}" src="../assets/images/integrity@3x.png" />
+						<img src="../assets/images/integrity@3x.png" />
 					</a>
 				</li>
 			</ul>
