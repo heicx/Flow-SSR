@@ -53,9 +53,8 @@
     </div>
     <div class="cn-footer-menu">
       <div class="content">
-        <a></a>
         <router-link to="/cn/effect" class="hotlink"></router-link>
-        <!-- <router-link to="/cn/shop" class="official-btn"></router-link> -->
+        <a class="official-btn" @click="officialQRConfirm()">购买商品</a>
       </div>
     </div>
     <div class="prohibit">
@@ -67,8 +66,11 @@
         <a class="btn-ok" @click="tipsConfirm(true)"></a>
         <a class="btn-no" @click="tipsConfirm()"></a>
       </div>
+    </div> -->
+    <div class="confirm-official-qrcode" v-if="isShowTips">
+      <div class="confirm-official-close-btn" @click="officialQRConfirm()"></div>
     </div>
-    <div class="mask" v-if="isShowTips"></div> -->
+    <div class="mask" v-if="isShowTips"></div>
   </section>
 </template>
 
@@ -79,7 +81,7 @@ export default {
   layout: 'common',
   data() {
     return {
-      // isShowTips: !localStorage.getItem('_tips'),
+      isShowTips: false,
       videoStatus: ""
     }
   },
@@ -122,6 +124,9 @@ export default {
         window.open('', '_self', '');
         window.close();
       }
+    },
+    officialQRConfirm () {
+      this.isShowTips = !this.isShowTips;
     }
   }
 }
@@ -441,6 +446,33 @@ export default {
   }
 }
 
+.confirm-official-qrcode {
+  position: fixed;
+  width: 813px;
+  height: 398px;
+  background-image: url(~assets/images/official-dialog.png);
+  background-image: -webkit-image-set(url(~assets/images/official-dialog.png) 1x,url(~assets/images/official-dialog@2x.png) 2x);
+  border-radius: 10px;
+  top: 35%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 35;
+}
+
+.confirm-official-close-btn {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  background-image: url(~assets/images/dialog-close-btn.png);
+  background-image: -webkit-image-set(url(~assets/images/dialog-close-btn.png) 1x,url(~assets/images/dialog-close-btn@2x.png) 2x);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  bottom: -45%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 35;
+}
+
 .confirm-tips {
   position: fixed;
   width: 1000px;
@@ -553,6 +585,12 @@ export default {
     display: block;
     width: 204px;
     height: 100px;
+    line-height: 100px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
   }
 }
 
