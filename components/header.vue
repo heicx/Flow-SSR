@@ -32,6 +32,10 @@
               >
                 {{subItem.name}}
               </router-link>
+
+              <li v-if="item.eName === 'entityshop'" @click="closeMenu('machine')">
+                贩卖机申请
+              </li>
             </ul>
           </li>
         </router-link>
@@ -49,7 +53,11 @@ export default {
 		}
   },
   methods: {
-    closeMenu () {
+    closeMenu (name) {
+      if (name === 'machine') {
+        window.open('https://www.wjx.cn/jq/53047966.aspx', '_blank');
+      }
+      
       this.showMenu = false;
     },
     onMouseEnterItem (name) {
@@ -102,6 +110,7 @@ export default {
         },
         {
           name: '招商加盟',
+          eName: 'entityshop',
 					alias: {
             path: ['entityshop', 'cn-entityshop', 'investment', 'cn-investment'],
             subItems: [
